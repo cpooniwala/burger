@@ -26,3 +26,7 @@ module.exports = burger;
 // burger.update("id=6", function() {
 //   console.log("updated test");
 // });
+
+// burger.create("Test Burger", function() {
+//   console.log("test");
+// });
