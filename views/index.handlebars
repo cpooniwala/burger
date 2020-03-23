@@ -1,0 +1,34 @@
+<!-- Pass in data from server.js -->
+<ul>
+    {{#each burger}}
+    <li>
+        <p><span class="label">ID:</span> {{this.id}}</p>
+        <p><span class="label">name:</span> {{this.name}}</p>
+
+        <button data-id="{{this.id}}" class="eatBurger">Eat</button>
+
+    </li>
+    {{/each}}
+</ul>
+
+<form class="form-group">
+    <h2>Burger Form</h2>
+    <label for="auth">Enter Burger Name:</label>
+    <input type="text" id="burgerID" name="burgerName">
+    <button type="submit" id="burgerSubmit">Add Burger</button>
+</form>
+
+{{!-- <form class="create-form">
+
+    <div class="form-group">
+        <label for="auth">Author:</label>
+        <input type="text" id="auth" name="author">
+    </div>
+
+    <div class="form-group">
+        <label for="quo">Quote:</label>
+        <textarea id="quo" name="quote" rows="8" cols="40"></textarea>
+    </div>
+
+    <button type="submit">Add Quote</button>
+</form> --}}
