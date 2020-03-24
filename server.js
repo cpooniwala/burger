@@ -6,8 +6,10 @@ var app = express();
 
 var bodyParser = require("body-parser");
 
+const path = require("path");
+
 // Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Parse request body as JSON
 app.use(
